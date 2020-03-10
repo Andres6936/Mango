@@ -16,15 +16,14 @@ class Slider {
     }
 
     showSlider(slider, numberSlider) {
-        slider.classList.add('d-block');
-        slider.classList.remove('d-none');
+        slider.classList.replace('d-none', 'd-block');
 
         this.whichSliderIsShowSectionI[numberSlider] = true;
     }
 
     hiddenSlider(slider, numberSlider) {
-        slider.classList.remove('d-block');
         slider.classList.add('d-none');
+        slider.classList.replace('d-block', 'd-none');
 
         this.whichSliderIsShowSectionI[numberSlider] = false;
     }
