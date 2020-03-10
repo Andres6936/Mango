@@ -31,19 +31,39 @@ class Slider {
     nextSliderSectionI() {
         if (this.whichSliderIsShowSectionI[1] && this.whichSliderIsShowSectionI[2]) {
             // Hidden the slider 1
-            // Slider two without change
+            // Slider 2 without change
             // Show the slider 3
 
             this.hiddenSlider(this.sliderOneSectionI, 1);
             this.showSlider(this.sliderThreeSectionI, 3);
         } else if (this.whichSliderIsShowSectionI[2] && this.whichSliderIsShowSectionI[3]) {
+            // Hidden the slider 2
+            // Slider 3 without change
+            // Show the slider 4
 
+            this.hiddenSlider(this.sliderTwoSectionI, 2);
+            this.showSlider(this.sliderFourSectionI, 4);
         } else if (this.whichSliderIsShowSectionI[3] && this.whichSliderIsShowSectionI[4]) {
+            // Hidden the slider 3
+            // Slider 4 without change
+            // Show the slider 5
 
+            this.hiddenSlider(this.sliderThreeSectionI, 3);
+            this.showSlider(this.sliderFiveSectionI, 5);
         } else if (this.whichSliderIsShowSectionI[4] && this.whichSliderIsShowSectionI[5]) {
+            // Hidden the slider 4
+            // Slider 5 without change
+            // Show the slider 1
 
+            this.hiddenSlider(this.sliderFourSectionI, 4);
+            this.showSlider(this.sliderOneSectionI, 1);
         } else if (this.whichSliderIsShowSectionI[5] && this.whichSliderIsShowSectionI[1]) {
+            // Hidden the slider 5
+            // Slider 1 without change
+            // Show the slider 2
 
+            this.hiddenSlider(this.sliderFiveSectionI, 5);
+            this.showSlider(this.sliderTwoSectionI, 2);
         }
     }
 }
