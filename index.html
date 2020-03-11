@@ -13,101 +13,115 @@
 </head>
 
 <body>
+
 <div>
     <nav class="navbar navbar-light navbar-expand-md">
         <div class="container"><a class="navbar-brand" href="#" style="color: #EBEBEB;">Mango Valley Company Inc.</a>
         </div>
     </nav>
 </div>
+
 <div class="container">
-    <header>
-        <div class="card">
-            <h6 class="shadow-sm card-header">Equipo de Desarrollo</h6>
-        </div>
-    </header>
-    <div class="row" style="margin-top: 10px;">
-        <div class="col">
-            <div class="card-columns text-left d-md-flex justify-content-md-center align-items-md-center">
 
-                <!-- Button Slider Prev Section I -->
-                <div class="card text-center d-xl-flex justify-content-xl-start align-items-xl-start"
-                     style="width: 150px;margin-right: 10px;border: 0;background: 0;">
-                    <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg">
+    <div class="accordion" id="accordion-team">
+
+        <header>
+            <div class="card">
+                <h6 class="shadow-sm card-header">
+                    <button type="button" class="btn btn-link"
+                            data-toggle="collapse"
+                            data-target="#section-team">
+                        Equipo de Desarrollo
+                    </button>
+                </h6>
+            </div>
+        </header>
+
+        <div id="section-team" class="row collapse" data-parent="#accordion-team" style="margin-top: 10px;">
+            <div class="col">
+                <div class="card-columns text-left d-md-flex justify-content-md-center align-items-md-center">
+
+                    <!-- Button Slider Prev Section I -->
+                    <div class="card text-center d-xl-flex justify-content-xl-start align-items-xl-start"
+                         style="width: 150px;margin-right: 10px;border: 0;background: 0;">
+                        <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg">
+                    </div>
+
+                    <!-- Slider One Section I -->
+                    <div id="slider-one-section-I" class="card shadow-sm">
+                        <img class="card-img-top w-100 d-block" src="assets/img/Yellow.svg" height="150"
+                             style="margin-top: 10px;">
+
+                        <div class="card-body">
+                            <h4 class="text-center card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                            <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
+                    </div>
+
+                    <!-- Slider Two Section I -->
+                    <div id="slider-two-section-I" class="card shadow-sm">
+                        <img class="card-img-top w-100 d-block" src="assets/img/Red.svg" height="150"
+                             style="margin-top: 10px;">
+                        <div class="card-body">
+                            <h4 class="text-center card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                            <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
+                    </div>
+
+                    <!-- Slider Three Section I -->
+                    <div id="slider-three-section-I" class="card d-none shadow-sm">
+                        <img class="card-img-top w-100 d-block" src="assets/img/Green.svg" height="150"
+                             style="margin-top: 10px;">
+
+                        <div class="card-body">
+                            <h4 class="text-center card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                            <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
+                    </div>
+
+                    <!-- Slider Four Section I -->
+                    <div id="slider-four-section-I" class="card d-none shadow-sm">
+                        <img class="card-img-top w-100 d-block" src="assets/img/Blue.svg" height="150"
+                             style="margin-top: 10px;">
+
+                        <div class="card-body">
+                            <h4 class="text-center card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                            <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
+                    </div>
+
+                    <!-- Slider Five Section I -->
+                    <div id="slider-five-section-I" class="card d-none shadow-sm">
+                        <img class="card-img-top w-100 d-block" src="assets/img/Orange.svg" height="150"
+                             style="margin-top: 10px;">
+
+                        <div class="card-body">
+                            <h4 class="text-center card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                            <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
+                    </div>
+
+                    <!-- Button Slider Next Section I -->
+                    <div class="card text-center"
+                         style="width: 150px;margin-right: 0px;margin-left: 10px;border: 0;background: 0;">
+                        <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg"
+                             style="transform: rotate(180deg);" onclick="nextSliderSectionI()">
+                    </div>
+
                 </div>
-
-                <!-- Slider One Section I -->
-                <div id="slider-one-section-I" class="card shadow-sm">
-                    <img class="card-img-top w-100 d-block" src="assets/img/Yellow.svg" height="150"
-                         style="margin-top: 10px;">
-
-                    <div class="card-body">
-                        <h4 class="text-center card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
-                        <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
-                </div>
-
-                <!-- Slider Two Section I -->
-                <div id="slider-two-section-I" class="card shadow-sm">
-                    <img class="card-img-top w-100 d-block" src="assets/img/Red.svg" height="150"
-                         style="margin-top: 10px;">
-                    <div class="card-body">
-                        <h4 class="text-center card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
-                        <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
-                </div>
-
-                <!-- Slider Three Section I -->
-                <div id="slider-three-section-I" class="card d-none shadow-sm">
-                    <img class="card-img-top w-100 d-block" src="assets/img/Green.svg" height="150"
-                         style="margin-top: 10px;">
-
-                    <div class="card-body">
-                        <h4 class="text-center card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
-                        <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
-                </div>
-
-                <!-- Slider Four Section I -->
-                <div id="slider-four-section-I" class="card d-none shadow-sm">
-                    <img class="card-img-top w-100 d-block" src="assets/img/Blue.svg" height="150"
-                         style="margin-top: 10px;">
-
-                    <div class="card-body">
-                        <h4 class="text-center card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
-                        <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
-                </div>
-
-                <!-- Slider Five Section I -->
-                <div id="slider-five-section-I" class="card d-none shadow-sm">
-                    <img class="card-img-top w-100 d-block" src="assets/img/Orange.svg" height="150"
-                         style="margin-top: 10px;">
-
-                    <div class="card-body">
-                        <h4 class="text-center card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
-                        <a class="card-link d-lg-flex justify-content-lg-end" href="#">Más Detalles ...</a></div>
-                </div>
-
-                <!-- Button Slider Next Section I -->
-                <div class="card text-center"
-                     style="width: 150px;margin-right: 0px;margin-left: 10px;border: 0;background: 0;">
-                    <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg"
-                         style="transform: rotate(180deg);" onclick="nextSliderSectionI()">
-                </div>
-
             </div>
         </div>
+
     </div>
 
     <div class="accordion" id="accordion-project">
