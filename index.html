@@ -139,16 +139,20 @@
         </header>
 
         <div id="section-project" class="row collapse" data-parent="#accordion-project" style="margin-top: 10px;">
-            <div class="col">
-                <div class="card-columns d-md-flex d-lg-flex align-items-md-center align-items-lg-center">
 
-                    <!-- Button Slider Prev Project -->
-                    <div class="card text-center" style="width: 80px;margin-right: 10px;border: 0;background: 0;">
-                        <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg">
-                    </div>
+            <div id="carousel-project" class="carousel slide" data-ride="carousel">
 
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-project" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-project" data-slide-to="1"></li>
+                    <li data-target="#carousel-project" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner col-10 offset-1">
                     <!-- Slider One Section II -->
-                    <div id="slider-one-section-II" class="card shadow-sm">
+                    <div id="slider-one-section-II" class="carousel-item active card shadow-sm">
                         <div class="card-body">
                             <img class="shadow float-left" src="assets/img/Orange.svg" height="200px"
                                  style="margin-right: 20px;margin-bottom: 15px;">
@@ -160,7 +164,7 @@
                     </div>
 
                     <!-- Slider Two Section II -->
-                    <div id="slider-two-section-II" class="card shadow-sm d-none">
+                    <div id="slider-two-section-II" class="carousel-item card shadow-sm">
                         <div class="card-body">
                             <img class="shadow float-left" src="assets/img/Green.svg" height="200px"
                                  style="margin-right: 20px;margin-bottom: 15px;">
@@ -172,7 +176,7 @@
                     </div>
 
                     <!-- Slider Three Section II -->
-                    <div id="slider-three-section-II" class="card shadow-sm d-none">
+                    <div id="slider-three-section-II" class="carousel-item card shadow-sm">
                         <div class="card-body">
                             <img class="shadow float-left" src="assets/img/Red.svg" height="200px"
                                  style="margin-right: 20px;margin-bottom: 15px;">
@@ -182,15 +186,19 @@
                                 metus.</p>
                         </div>
                     </div>
-
-                    <!-- Button Slider Next Project -->
-                    <div class="card text-center float-right d-md-flex d-lg-flex align-items-md-center align-items-lg-center"
-                         style="width: 80px;margin-left: 10px;border: 0;background: 0;">
-                        <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg"
-                             style="transform: rotate(180deg);" onclick="nextSliderSectionII()">
-                    </div>
                 </div>
+
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#carousel-project" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#carousel-project" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
             </div>
+
         </div>
 
     </div>
@@ -200,7 +208,6 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/sliderTeam.js"></script>
-<script src="assets/js/sliderProject.js"></script>
 
 </body>
 
