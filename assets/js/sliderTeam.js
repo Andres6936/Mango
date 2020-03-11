@@ -16,14 +16,14 @@ class SliderTeam {
     }
 
     showSlider(slider, numberSlider) {
-        slider.classList.replace('d-none', 'd-block');
+        slider.classList.replace('d-sm-none', 'd-xs-block');
 
         this.whichSliderIsShowSectionI[numberSlider] = true;
     }
 
     hiddenSlider(slider, numberSlider) {
-        slider.classList.add('d-none');
-        slider.classList.replace('d-block', 'd-none');
+        slider.classList.add('d-sm-none');
+        slider.classList.replace('d-xs-block', 'd-sm-none');
 
         this.whichSliderIsShowSectionI[numberSlider] = false;
     }
