@@ -16,7 +16,8 @@
 
 <div>
     <nav class="navbar navbar-light navbar-expand-md">
-        <div class="container"><a class="navbar-brand" href="#" style="color: #EBEBEB;">Mango Valley Company Inc.</a>
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #EBEBEB;">Mango Valley Company Inc.</a>
         </div>
     </nav>
 </div>
@@ -29,6 +30,7 @@
             <div class="card">
                 <h6 class="shadow-sm card-header">
                     <button type="button" class="btn btn-link text-white"
+                            onclick="showToastBootstrap()"
                             data-toggle="collapse"
                             data-target="#section-team">
                         Equipo de Desarrollo
@@ -128,6 +130,7 @@
             <div class="card">
                 <h6 class="shadow-sm card-header">
                     <button type="button" class="btn btn-link text-white"
+                            onclick="showToastArchitect()"
                             data-toggle="collapse"
                             data-target="#section-project">
                         Proyectos Actuales
@@ -197,6 +200,33 @@
 
             </div>
 
+        </div>
+
+    </div>
+
+    <!-- Toast -->
+    <div style="position: absolute; top: 10px; right: 10px">
+
+        <!-- Toast for show the technology used-->
+        <div class="toast" id="toast-bootstrap" data-delay="1500">
+            <div class="toast-header">
+                <strong class="mr-auto">Technologies used</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body text-dark">
+                Design with help of Bootstrap 4.
+            </div>
+        </div>
+
+        <!-- Toast for show the architect (Joan Buriticá)-->
+        <div class="toast" id="toast-architect" data-delay="1500">
+            <div class="toast-header">
+                <strong class="mr-auto">The Architect</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body text-dark">
+                Written by Joan Andrés Buriticá Salazar.
+            </div>
         </div>
 
     </div>

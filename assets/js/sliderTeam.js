@@ -73,3 +73,11 @@ let sliders = new SliderTeam();
 function nextSliderSectionI() {
     sliders.nextSliderSectionI();
 }
+
+function showToastBootstrap() {
+    $('#toast-bootstrap').toast('show');
+}
+
+function showToastArchitect() {
+    $('#toast-architect').toast('show');
+}
