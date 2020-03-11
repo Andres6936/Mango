@@ -1,4 +1,4 @@
-class Slider {
+class SliderTeam {
     constructor() {
 
         /**
@@ -68,7 +68,7 @@ class Slider {
     }
 }
 
-let sliders = new Slider();
+let sliders = new SliderTeam();
 
 function nextSliderSectionI() {
     sliders.nextSliderSectionI();
