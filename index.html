@@ -109,65 +109,78 @@
             </div>
         </div>
     </div>
-    <header>
-        <div class="card">
-            <h6 class="shadow-sm card-header">Proyectos Actuales</h6>
-        </div>
-    </header>
-    <div class="row" style="margin-top: 10px;">
-        <div class="col">
-            <div class="card-columns d-md-flex d-lg-flex align-items-md-center align-items-lg-center">
 
-                <!-- Button Slider Prev Project -->
-                <div class="card text-center" style="width: 80px;margin-right: 10px;border: 0;background: 0;">
-                    <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg">
-                </div>
+    <div class="accordion" id="accordion-project">
 
-                <!-- Slider One Section II -->
-                <div id="slider-one-section-II" class="card shadow-sm">
-                    <div class="card-body">
-                        <img class="shadow float-left" src="assets/img/Orange.svg" height="200px"
-                             style="margin-right: 20px;margin-bottom: 15px;">
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
+        <header>
+            <div class="card">
+                <h6 class="shadow-sm card-header">
+                    <button type="button" class="btn btn-link"
+                            data-toggle="collapse"
+                            data-target="#section-project">
+                        Proyectos Actuales
+                    </button>
+                </h6>
+            </div>
+        </header>
+
+        <div id="section-project" class="row collapse" data-parent="#accordion-project" style="margin-top: 10px;">
+            <div class="col">
+                <div class="card-columns d-md-flex d-lg-flex align-items-md-center align-items-lg-center">
+
+                    <!-- Button Slider Prev Project -->
+                    <div class="card text-center" style="width: 80px;margin-right: 10px;border: 0;background: 0;">
+                        <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg">
                     </div>
-                </div>
 
-                <!-- Slider Two Section II -->
-                <div id="slider-two-section-II" class="card shadow-sm d-none">
-                    <div class="card-body">
-                        <img class="shadow float-left" src="assets/img/Green.svg" height="200px"
-                             style="margin-right: 20px;margin-bottom: 15px;">
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
+                    <!-- Slider One Section II -->
+                    <div id="slider-one-section-II" class="card shadow-sm">
+                        <div class="card-body">
+                            <img class="shadow float-left" src="assets/img/Orange.svg" height="200px"
+                                 style="margin-right: 20px;margin-bottom: 15px;">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Slider Three Section II -->
-                <div id="slider-three-section-II" class="card shadow-sm d-none">
-                    <div class="card-body">
-                        <img class="shadow float-left" src="assets/img/Red.svg" height="200px"
-                             style="margin-right: 20px;margin-bottom: 15px;">
-                        <h4 class="card-title">Title</h4>
-                        <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                            dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
-                            metus.</p>
+                    <!-- Slider Two Section II -->
+                    <div id="slider-two-section-II" class="card shadow-sm d-none">
+                        <div class="card-body">
+                            <img class="shadow float-left" src="assets/img/Green.svg" height="200px"
+                                 style="margin-right: 20px;margin-bottom: 15px;">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Button Slider Next Project -->
-                <div class="card text-center float-right d-md-flex d-lg-flex align-items-md-center align-items-lg-center"
-                     style="width: 80px;margin-left: 10px;border: 0;background: 0;">
-                    <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg"
-                         style="transform: rotate(180deg);" onclick="nextSliderSectionII()">
+                    <!-- Slider Three Section II -->
+                    <div id="slider-three-section-II" class="card shadow-sm d-none">
+                        <div class="card-body">
+                            <img class="shadow float-left" src="assets/img/Red.svg" height="200px"
+                                 style="margin-right: 20px;margin-bottom: 15px;">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
+                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget
+                                metus.</p>
+                        </div>
+                    </div>
+
+                    <!-- Button Slider Next Project -->
+                    <div class="card text-center float-right d-md-flex d-lg-flex align-items-md-center align-items-lg-center"
+                         style="width: 80px;margin-left: 10px;border: 0;background: 0;">
+                        <img class="card-img-top w-100 d-block" src="assets/img/ButtonSliderArrows.svg"
+                             style="transform: rotate(180deg);" onclick="nextSliderSectionII()">
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+
 </div>
 
 <script src="assets/js/jquery.min.js"></script>
