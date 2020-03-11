@@ -74,9 +74,13 @@ function nextSliderSectionI() {
     sliders.nextSliderSectionI();
 }
 
+window.setTimeout(showToastBootstrap, 3000);
+
 function showToastBootstrap() {
     $('#toast-bootstrap').toast('show');
 }
+
+window.setTimeout(showToastArchitect, 6000);
 
 function showToastArchitect() {
     $('#toast-architect').toast('show');
