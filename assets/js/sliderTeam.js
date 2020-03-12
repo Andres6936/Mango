@@ -66,12 +66,55 @@ class SliderTeam {
             this.showSlider(this.sliderTwo, 2);
         }
     }
+
+    prevSlider() {
+        if (this.whichSliderIsShowSectionI[1] && this.whichSliderIsShowSectionI[2]) {
+            // Hidden slider 2
+            // Slider 1 without change
+            // Show slider 5
+
+            this.hiddenSlider(this.sliderTwo, 2);
+            this.showSlider(this.sliderFive, 5);
+        } else if (this.whichSliderIsShowSectionI[5] && this.whichSliderIsShowSectionI[1]) {
+            // Hidden slider 1
+            // Slider 5 without change
+            // Show slider 4
+
+            this.hiddenSlider(this.sliderOne, 1);
+            this.showSlider(this.sliderFour, 4);
+        } else if (this.whichSliderIsShowSectionI[4] && this.whichSliderIsShowSectionI[5]) {
+            // Hidden slider 5
+            // Slider 4 without change
+            // Show slider 3
+
+            this.hiddenSlider(this.sliderFive, 5);
+            this.showSlider(this.sliderThree, 3);
+        } else if (this.whichSliderIsShowSectionI[3] && this.whichSliderIsShowSectionI[4]) {
+            // Hidden slider 4
+            // Slider 3 without change
+            // Show slider 2
+
+            this.hiddenSlider(this.sliderFour, 4);
+            this.showSlider(this.sliderTwo, 2);
+        } else if (this.whichSliderIsShowSectionI[2] && this.whichSliderIsShowSectionI[3]) {
+            // Hidden 3 slider
+            // Slider 2 without change
+            // Show slider 1
+
+            this.hiddenSlider(this.sliderThree, 3);
+            this.showSlider(this.sliderOne, 1);
+        }
+    }
 }
 
 let sliders = new SliderTeam();
 
 function nextSliderSectionI() {
     sliders.nextSliderSectionI();
+}
+
+function prevSliderSectionI() {
+    sliders.prevSlider();
 }
 
 window.setTimeout(showToastBootstrap, 3000);
