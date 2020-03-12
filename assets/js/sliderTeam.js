@@ -8,11 +8,11 @@ class SliderTeam {
          */
         this.whichSliderIsShowSectionI = Array(false, true, true, false, false, false);
 
-        this.sliderOneSectionI = document.getElementById('slider-one-section-I');
-        this.sliderTwoSectionI = document.getElementById('slider-two-section-I');
-        this.sliderThreeSectionI = document.getElementById('slider-three-section-I');
-        this.sliderFourSectionI = document.getElementById('slider-four-section-I');
-        this.sliderFiveSectionI = document.getElementById('slider-five-section-I');
+        this.sliderOne = document.getElementById('slider-one-section-I');
+        this.sliderTwo = document.getElementById('slider-two-section-I');
+        this.sliderThree = document.getElementById('slider-three-section-I');
+        this.sliderFour = document.getElementById('slider-four-section-I');
+        this.sliderFive = document.getElementById('slider-five-section-I');
     }
 
     showSlider(slider, numberSlider) {
@@ -34,36 +34,36 @@ class SliderTeam {
             // Slider 2 without change
             // Show the slider 3
 
-            this.hiddenSlider(this.sliderOneSectionI, 1);
-            this.showSlider(this.sliderThreeSectionI, 3);
+            this.hiddenSlider(this.sliderOne, 1);
+            this.showSlider(this.sliderThree, 3);
         } else if (this.whichSliderIsShowSectionI[2] && this.whichSliderIsShowSectionI[3]) {
             // Hidden the slider 2
             // Slider 3 without change
             // Show the slider 4
 
-            this.hiddenSlider(this.sliderTwoSectionI, 2);
-            this.showSlider(this.sliderFourSectionI, 4);
+            this.hiddenSlider(this.sliderTwo, 2);
+            this.showSlider(this.sliderFour, 4);
         } else if (this.whichSliderIsShowSectionI[3] && this.whichSliderIsShowSectionI[4]) {
             // Hidden the slider 3
             // Slider 4 without change
             // Show the slider 5
 
-            this.hiddenSlider(this.sliderThreeSectionI, 3);
-            this.showSlider(this.sliderFiveSectionI, 5);
+            this.hiddenSlider(this.sliderThree, 3);
+            this.showSlider(this.sliderFive, 5);
         } else if (this.whichSliderIsShowSectionI[4] && this.whichSliderIsShowSectionI[5]) {
             // Hidden the slider 4
             // Slider 5 without change
             // Show the slider 1
 
-            this.hiddenSlider(this.sliderFourSectionI, 4);
-            this.showSlider(this.sliderOneSectionI, 1);
+            this.hiddenSlider(this.sliderFour, 4);
+            this.showSlider(this.sliderOne, 1);
         } else if (this.whichSliderIsShowSectionI[5] && this.whichSliderIsShowSectionI[1]) {
             // Hidden the slider 5
             // Slider 1 without change
             // Show the slider 2
 
-            this.hiddenSlider(this.sliderFiveSectionI, 5);
-            this.showSlider(this.sliderTwoSectionI, 2);
+            this.hiddenSlider(this.sliderFive, 5);
+            this.showSlider(this.sliderTwo, 2);
         }
     }
 }
